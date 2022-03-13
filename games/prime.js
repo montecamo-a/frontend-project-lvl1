@@ -1,5 +1,5 @@
-import getRandomInt from '../lib/functions';
-import runGame from '../brain-games';
+import getRandomInt from '../src/functions.js';
+import runGame from '../src/brain-games.js';
 
 const message = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 

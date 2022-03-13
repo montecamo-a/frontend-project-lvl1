@@ -1,7 +1,6 @@
 install:
 	npm install
 publish:
-	rm -rf dist
-	npm publish
+	npm publish --dry-run
 lint:
 	npx eslint .

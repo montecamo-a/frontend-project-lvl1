@@ -1,12 +1,10 @@
-import getRandomInt from '../lib/functions';
-import runGame from '../brain-games';
+import getRandomInt from '../src/functions.js';
+import runGame from '../src/brain-games.js';
 
 const message = 'Find the greatest common divisor of given numbers.';
 
-const gcd = (num1, num2) => (num1 === num2
-  ? num1
-  : gcd(Math.min(num1, num2), Math.abs(num1 - num2))
-);
+// eslint-disable-next-line
+const gcd = (num1, num2) => (num1 === num2 ? num1 : gcd(Math.min(num1, num2), Math.abs(num1 - num2)));
 
 const maxNumber = 99;
 
